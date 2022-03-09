@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel=icon href=./resources/images/checkmark-square-svgrepo-com.svg sizes="any" type="image/svg+xml">
+	<title>Your daily dose of quizzing</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./resources/css/reset.css">
+	<link rel="stylesheet" href="./resources/css/style.css">
+</head>
+<body>
+	<main>
+
+		<h1>Your daily dose of quizzing!</h1>
+		<!-- <section class="container"> -->
+		
+		<section class="flex-container width-min-content col-direction" id="selector">
+			<div class="child" id="one">
+				<label for="category">Choose a category:</label>
+				<select onchange="border(this.id)" id="category" name="category">
+					<option value>- Choose an option -</option> 
+					<!-- create exception -->
+					<option value="mythology">Mythology</option> 
+					<!-- 20 -->
+					<option value="history">History</option>
+					<!-- 23 -->
+					<option value="art">Art</option>
+					<!-- 25 -->
+				</select>
+			</div>
+			<div class="child" id="two">
+				<label for="difficulty">Choose a difficulty level:</label>
+				<select onchange="border(this.id)" id="difficulty" name="difficulty">
+					<option value>- Choose an option -</option> 
+					<!-- create exception -->
+					<option value="easy">Easy</option>
+					<!-- easy -->
+					<option value="medium">Medium</option>
+					<!-- medium -->
+					<option value="hard">Hard</option>
+					<!-- hard -->
+				</select>
+			</div>
+			<div id="three">
+				<button type="button" onclick="processInput()">Hit me!</button>
+			</div>
+		</section>
+
+		<section class="flex-container width-min-content col-direction" id="question-container"><a href="#question-container">
+			<div class="child" id="question">
+				<!-- populated by main.js -->
+			</div>
+			<div class="child" id="answers">
+				<ol id="answersOrderedList">
+				<!-- populated by main.js -->
+				</ol>
+			</div></a>
+		</section>
+
+		<section id="comment"><a href="#comment">
+			<h2 id="randomComment">
+			<!-- populated by main.js -->
+			</h2></a>
+		</section>
+
+	</main>
+
+	<script src="./resources/js/main.js" charset="utf-8"></script>
+</body>
+</html>
