@@ -37,9 +37,9 @@ In the case of (2), an async function is used to wait for the API request to be 
 
 When the user clicks one of the possible answers, the selected option will be evaluated. There are again two possibilities:
 
-1. *Wrong answer*. If the provided answer is wrong, the selected option will turn **red** (with a black border), indicating to the user that the provided answer is incorrect. Additionally, a comment will be added below the multiple choice range, explaining to the user that the answer is incorrect and encouraging the user to have another guess.
+1. *Wrong answer*. If the provided answer is wrong, the selected option will turn **red** (with a black border), indicating to the user that the provided answer is incorrect. Additionally, a (randomized) comment will be added below the multiple choice range, explaining to the user that the answer is incorrect and encouraging the user to have another guess.
 
-2. *Correct answer*. If the provided answer is correct, the selected option will turn **green** (with a black), indicating to the user that the provided answer is correct. At this point, the user will also lose the ability to click any of the options (i.e. the `onclick` events will be assigned the value `null`). In this case too, a comment will appear underneath to congratulate the user for providing the correct answer. It will also contain an encouragement to generate a new question.
+2. *Correct answer*. If the provided answer is correct, the selected option will turn **green** (with a black border), indicating to the user that the provided answer is correct. At this point, the user will also lose the ability to click any of the options (i.e. the `onclick` events will be assigned the value `null`). In this case too, a (randomized) comment will appear underneath to congratulate the user for providing the correct answer. It will also contain an encouragement to generate a new question.
 
 <sub>\* Note that the "Trivia API" actually allows the user to choose from a much larger category range. It is also possible to retrieve more than one question at a time, and to receive a `true` / `false` evaluation rather than a multiple choice range. For present purposes, we only want to retrieve 1 question at a time.</sub>
 
