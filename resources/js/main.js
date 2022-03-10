@@ -167,7 +167,8 @@ function checkAnswer(num) {
 function killInteraction() {
   [1, 2, 3, 4].forEach(number => {
     document.getElementById(number).onclick = 'null'; 
-    document.getElementById(number).style.cursor = 'inherit'; 
+    document.getElementById(number).style.cursor = 'auto'; 
+
   });
 }
 
