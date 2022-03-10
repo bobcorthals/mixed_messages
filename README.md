@@ -17,7 +17,7 @@ This [web app](https://bobcorthals.github.io/mixed_messages) generates a random 
 
 ### Aims
 
-As per the project's description on [Codecademy](https://discuss.codecademy.com/t/about-the-portfolio-project-mixed-messages-category/535742), my aim was to build a message generator program using JavaScript. Since I also wanted to continue ppracticing my HTML and CSS skills, I've embedded my script in an HTML document (index.html).
+As per the project's description on [Codecademy](https://discuss.codecademy.com/t/about-the-portfolio-project-mixed-messages-category/535742), my aim was to build a message generator program using JavaScript. Since I also wanted to continue practicing my HTML and CSS skills, I've embedded my script in an HTML document (index.html).
 
 ### Technologies
 
