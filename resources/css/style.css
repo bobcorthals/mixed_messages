@@ -60,6 +60,7 @@ h1, #comment {
   text-align: left;
   line-height: 1.5;
   padding: 1rem;
+  cursor: auto;
 }
 
 ol {

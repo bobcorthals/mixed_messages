@@ -1,6 +1,6 @@
 # Mixed Messages
 
-Codecademy portfolio project (part of [Full Stack Engineer Path](https://www.codecademy.com/learn/paths/full-stack-engineer-career-path)).
+Codecademy portfolio project (part of [Full Stack Engineer Path](https://www.codecademy.com/learn/paths/full-stack-engineer-career-path)). Published on [GitHub Pages](https://bobcorthals.github.io/mixed_messages). 
 
 ## Contents
 
@@ -13,7 +13,7 @@ Codecademy portfolio project (part of [Full Stack Engineer Path](https://www.cod
 
 ## Description
 
-This [web app](link) generates a random multiple choice quiz question based on user selection. The questions themselves are retrieved from the "Trivia API" (free JSON API) at [Open Trivia Database](https://opentdb.com/api_config.php).
+This [web app](https://bobcorthals.github.io/mixed_messages) generates a random multiple choice quiz question based on user selection. The questions themselves are retrieved from the "Trivia API" (free JSON API) at [Open Trivia Database](https://opentdb.com/api_config.php).
 
 ### Aims
 
@@ -29,7 +29,7 @@ As per the project's description on [Codecademy](https://discuss.codecademy.com/
 
 ### Detailed description
 
-So, how does it work? When the users open the [web app](link) for the first time, a selection form will show up. The user is asked to select both a *category* (mythology, history, art) and a *difficulty level* (easy, medium, hard). Clicking the button "Hit me!" will trigger an evaluation of the user input. There are two possibilities:
+So, how does it work? When the users open the [web app](https://bobcorthals.github.io/mixed_messages) for the first time, a selection form will show up. The user is asked to select both a *category* (mythology, history, art) and a *difficulty level* (easy, medium, hard). Clicking the button "Hit me!" will trigger an evaluation of the user input. There are two possibilities:
 1. *Invalid input*. When the user fails to choose a valid option for either one of the forms or both, the select form(s) in question will get a red border, alerting the user to the error.
 2. *Valid input*. With two valid options selected, an API request will be sent to a URL that uses the user's choices as input.*
 

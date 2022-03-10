@@ -31,16 +31,16 @@ function processInput() {
   let value_category = category.options[category.selectedIndex].value;
 
   if (value_difficulty === '' && value_category === '') {
-    console.log('Houston, we have two problems!');
+    // console.log('Houston, we have two problems!');
     document.getElementById('category').style.border = "0.125rem solid red";
     document.getElementById('difficulty').style.border = "0.125rem solid red";
     return false;
   } else if (value_category === '') {
-    console.log('Houston, we have a problem!');
+    // console.log('Houston, we have a problem!');
     document.getElementById('category').style.border = "0.125rem solid red";
     return false;
   } else if (value_difficulty === '') {
-    console.log('Houston, we have a problem!');
+    // console.log('Houston, we have a problem!');
     document.getElementById('difficulty').style.border = "0.125rem solid red";
     return false;
   }
@@ -60,12 +60,8 @@ function processInput() {
       break;
   }
 
-  console.log(category_id);
-
   // create correct url
   url = `https://opentdb.com/api.php?amount=1&category=${category_id}&difficulty=${value_difficulty}&type=multiple`
-
-  console.log(url);
 
   // get response api, store the correct answer, and pipe data through to function generateQuestion
   let data = getData(url).then(data => {
@@ -93,7 +89,6 @@ function decodeEntity(inputStr) {
 function generateQuestion(data) {
   
   answersOrderedList = [];
-  console.log('here')
 
   document.getElementById('question').style.display = 'block';
   document.getElementById('question').style.backgroundColor = 'aliceblue';
@@ -133,11 +128,10 @@ function checkAnswer(num) {
   });
 
   if (choice === correct_answer) {
-    console.log(`${choice} is the correct answer`);
+    // console.log(`${choice} is the correct answer`);
     document.getElementById(num).style.backgroundColor = 'green';
     document.getElementById(num).style.border = '0.125rem solid black';
 
-    console.log('i was here');
     document.getElementById('comment').style.display = 'block';
     document.getElementById('comment').style.borderColor = 'green';
     
@@ -148,7 +142,7 @@ function checkAnswer(num) {
     createRandomPraise();
 
   } else {
-    console.log(`Incorrect. The correct answer is ${correct_answer}`);
+    // console.log(`Incorrect. The correct answer is ${correct_answer}`);
     document.getElementById(num).style.backgroundColor = 'red';
     document.getElementById(num).style.border = '0.125rem solid black';
 
