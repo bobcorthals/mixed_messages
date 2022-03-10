@@ -84,6 +84,7 @@ button {
   padding: 0.5rem;
   font-family: inherit;
   font-weight: bold;
+  cursor: pointer;
 }
 
 select {
@@ -101,6 +102,10 @@ select {
 
 select:focus {
   outline: white solid 0.125rem;
+}
+
+#randomComment {
+  cursor: auto;
 }
 
 @media only screen and (max-width: 1000px) {
