@@ -69,6 +69,9 @@ function processInput() {
     generateQuestion(data);
   })
 
+  // gets rid of eventlistener after first click.
+  document.getElementById('button').removeAttribute("onclick");
+
 }
 
 // async function to capture response api
@@ -140,6 +143,8 @@ function checkAnswer(num) {
     window.location.href = '#comment';
 
     createRandomPraise();
+
+    document.getElementById('button').setAttribute("onclick","processInput()");
 
   } else {
     // console.log(`Incorrect. The correct answer is ${correct_answer}`);
