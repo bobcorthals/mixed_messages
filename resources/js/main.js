@@ -24,6 +24,10 @@ function processInput() {
   document.getElementById('question').style.display = 'none';
   document.getElementById('answers').style.display = 'none';
 
+  if (document.getElementById('button').onclick === null) {
+  document.getElementById('button').setAttribute("onclick","processInput()");
+  }
+
   let difficulty = document.getElementById('difficulty');
   let value_difficulty = difficulty.options[difficulty.selectedIndex].value;
 
