@@ -71,7 +71,17 @@ function processInput() {
 
   // gets rid of eventlistener after first click.
   document.getElementById('button').removeAttribute("onclick");
+  document.getElementById('button').setAttribute("onclick","pendingQuestion()")
 
+}
+
+function pendingQuestion() {
+  if (confirm("You still have a question pending. Do you want to generate a new question anyway?")) {
+    document.getElementById('button').removeAttribute("onclick");
+    processInput();
+  } else {
+    return false;
+  }
 }
 
 // async function to capture response api
